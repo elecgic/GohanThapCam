@@ -1,1 +1,465 @@
-local v0=Instance.new("ScreenGui");local v1=Instance.new("Frame");local v2=Instance.new("UICorner");local v3=Instance.new("UIAspectRatioConstraint");local v4=Instance.new("Frame");local v5=Instance.new("UICorner");local v6=Instance.new("TextButton");local v7=Instance.new("UICorner");local v8=Instance.new("TextButton");local v9=Instance.new("UICorner");local v10=Instance.new("UIPadding");local v11=Instance.new("UIListLayout");local v12=Instance.new("Frame");local v13=Instance.new("Frame");local v14=Instance.new("UICorner");local v15=Instance.new("UIPadding");local v16=Instance.new("Frame");local v17=Instance.new("TextLabel");local v18=Instance.new("UICorner");local v19=Instance.new("Frame");local v20=Instance.new("Frame");local v21=Instance.new("Frame");local v22=Instance.new("TextButton");local v23=Instance.new("UICorner");local v24=Instance.new("TextButton");local v25=Instance.new("UICorner");local v26=Instance.new("TextButton");local v27=Instance.new("UICorner");local v28=Instance.new("TextButton");local v29=Instance.new("UICorner");local v30=Instance.new("TextButton");local v31=Instance.new("UICorner");local v32=Instance.new("Frame");local v33=Instance.new("TextLabel");local v34=Instance.new("TextLabel");local v35=Instance.new("TextButton");local v36=Instance.new("UICorner");local v37=Instance.new("ImageLabel");v0.Name="CustomGuiSystem";v0.Parent=game.Players.LocalPlayer:WaitForChild("PlayerGui");v0.ResetOnSpawn=false;v1.Name="MainFrame";v1.Parent=v0;v1.AnchorPoint=Vector2.new(997.5 -(915 + 82) ,0.5);v1.BackgroundColor3=Color3.new(0.0823529,0.0823529 -0 ,0.0823529);v1.BorderSizePixel=0 + 0 ;v1.Position=UDim2.new(0.5 -0 ,1187 -(1069 + 118) ,0.5 -0 ,0 -0 );v1.Size=UDim2.new(0.850000024 + 0 ,0 -0 ,0.850000024 + 0 ,791 -(368 + 423) );v2.Parent=v1;v2.CornerRadius=UDim.new(0 -0 ,33 -(10 + 8) );v3.Parent=v1;v3.AspectRatio=1.25;v4.Name="LeftColumn";v4.Parent=v1;v4.BackgroundColor3=Color3.new(0.0823529,0.0823529,0.0823529);v4.BorderSizePixel=0;v4.Position=UDim2.new(0 -0 ,451 -(416 + 26) ,0 -0 ,20 + 25 );v4.Size=UDim2.new(0.219739825, -2,1, -(79 -34));v5.Parent=v4;v5.CornerRadius=UDim.new(0,453 -(145 + 293) );v6.Name="BloxFruits";v6.Parent=v4;v6.BackgroundColor3=Color3.new(430.117647 -(44 + 386) ,1486.117647 -(998 + 488) ,0.117647);v6.BorderSizePixel=0 + 0 ;v6.Position=UDim2.new(0, -5,0,0 + 0 );v6.Size=UDim2.new(773 -(201 + 571) ,1156 -(116 + 1022) ,0 -0 ,27 + 18 );v6.Font=Enum.Font.GothamBold;v6.Text="⚔️ Blox Fruits";v6.TextColor3=Color3.new(1,3 -2 ,3 -2 );v6.TextSize=875 -(814 + 45) ;v7.Parent=v6;v7.CornerRadius=UDim.new(0 -0 ,10);v8.Name="GrowAGarden";v8.Parent=v4;v8.BackgroundColor3=Color3.new(0.117647 + 0 ,0.117647,0.117647 + 0 );v8.BorderSizePixel=0;v8.Position=UDim2.new(885 -(261 + 624) , -5,0,0);v8.Size=UDim2.new(1 -0 ,1098 -(1020 + 60) ,0,1468 -(630 + 793) );v8.Font=Enum.Font.GothamBold;v8.Text="🌱 Grow a Garden";v8.TextColor3=Color3.new(3 -2 ,4 -3 ,1 + 0 );v8.TextSize=54 -38 ;v9.Parent=v8;v9.CornerRadius=UDim.new(0,1757 -(760 + 987) );v10.Parent=v4;v10.PaddingBottom=UDim.new(0,25);v10.PaddingLeft=UDim.new(1913 -(1789 + 124) ,5);v10.PaddingRight=UDim.new(766 -(745 + 21) ,25);v10.PaddingTop=UDim.new(0,9 + 16 );v11.Parent=v4;v11.Padding=UDim.new(0 -0 ,58 -43 );v12.Name="Separator";v12.Parent=v1;v12.BackgroundColor3=Color3.new(1,1,1 + 0 );v12.BorderSizePixel=0 + 0 ;v12.Position=UDim2.new(1055.229543731 -(87 + 968) , -1,0 -0 ,41 + 4 );v12.Size=UDim2.new(0.0012254715 -0 ,2,0.934469581, -(1458 -(447 + 966)));v13.Name="RightColumn";v13.Parent=v1;v13.BackgroundColor3=Color3.new(0.0823529 -0 ,1817.0823529 -(1703 + 114) ,0.0823529);v13.BorderSizePixel=701 -(376 + 325) ;v13.Position=UDim2.new(0.230769143,2,0,73 -28 );v13.Size=UDim2.new(0.755750477 -0 , -2,1 + 0 , -(98 -53));v14.Parent=v13;v14.CornerRadius=UDim.new(14 -(9 + 5) ,386 -(85 + 291) );v15.Parent=v13;v15.PaddingBottom=UDim.new(0,25);v15.PaddingLeft=UDim.new(0,1290 -(243 + 1022) );v15.PaddingRight=UDim.new(0 -0 ,21 + 4 );v15.PaddingTop=UDim.new(0,25);v16.Name="TitleFrame";v16.Parent=v13;v16.BackgroundColor3=Color3.new(1180.0784314 -(1123 + 57) ,0.0784314 + 0 ,254.0784314 -(163 + 91) );v16.BackgroundTransparency=1931 -(1869 + 61) ;v16.BorderSizePixel=0 + 0 ;v16.Size=UDim2.new(1,0,0 -0 ,61 -21 );v17.Name="TitleLabel";v17.Parent=v16;v17.BackgroundTransparency=1;v17.Position=UDim2.new(0 + 0 ,9,0 -0 , -(28 + 1));v17.Size=UDim2.new(1475 -(1329 + 145) , -20,972 -(140 + 831) ,0);v17.Font=Enum.Font.GothamBold;v17.Text="Select a game";v17.TextColor3=Color3.new(1851 -(1409 + 441) ,719 -(15 + 703) ,1 + 0 );v17.TextSize=18;v17.TextXAlignment=Enum.TextXAlignment.Left;v18.Parent=v16;v19.Name="PagesContainer";v19.Parent=v13;v19.BackgroundTransparency=439 -(262 + 176) ;v19.Position=UDim2.new(0,0,1721 -(345 + 1376) ,50);v19.Size=UDim2.new(689 -(198 + 490) ,0 -0 ,2 -1 , -50);v20.Name="GrowAGardenPage";v20.Parent=v19;v20.BackgroundTransparency=1;v20.Size=UDim2.new(1207 -(696 + 510) ,0 -0 ,1,0);v20.Visible=false;v21.Name="BloxFruitsPage";v21.Parent=v19;v21.BackgroundTransparency=1;v21.Size=UDim2.new(1263 -(1091 + 171) ,0 + 0 ,1,0);v21.Visible=false;v22.Name="QuantumOnyxHub";v22.Parent=v21;v22.BackgroundColor3=Color3.new(0.117647 -0 ,0.117647,0.117647);v22.BorderSizePixel=0 -0 ;v22.Position=UDim2.new(0,0,374 -(123 + 251) , -(124 -99));v22.Size=UDim2.new(699 -(208 + 490) ,0,0 + 0 ,45);v22.Font=Enum.Font.GothamBold;v22.Text="   QuantumOnyx Hub";v22.TextColor3=Color3.new(1 + 0 ,1,837 -(660 + 176) );v22.TextSize=16;v22.TextXAlignment=Enum.TextXAlignment.Left;v23.Parent=v22;v23.CornerRadius=UDim.new(0,1 + 5 );v24.Name="BlueXHub";v24.Parent=v21;v24.BackgroundColor3=Color3.new(0.117647,0.117647,202.117647 -(14 + 188) );v24.BorderSizePixel=0;v24.Position=UDim2.new(0,0,675 -(534 + 141) ,15 + 20 );v24.Size=UDim2.new(1,0 + 0 ,0 + 0 ,94 -49 );v24.Font=Enum.Font.GothamBold;v24.Text="    Blue X Hub";v24.TextColor3=Color3.new(1 -0 ,2 -1 ,1 + 0 );v24.TextSize=16;v24.TextXAlignment=Enum.TextXAlignment.Left;v25.Parent=v24;v26.Name="GravityHub";v26.Parent=v21;v26.BackgroundColor3=Color3.new(0.117647 + 0 ,0.117647,396.117647 -(115 + 281) );v26.BorderSizePixel=0 -0 ;v26.Position=UDim2.new(0,0,0 + 0 ,95);v26.Size=UDim2.new(1,0 -0 ,0 -0 ,45);v26.Font=Enum.Font.GothamBold;v26.Text="    Gravity Hub";v26.TextColor3=Color3.new(868 -(550 + 317) ,1 -0 ,1 -0 );v26.TextSize=44 -28 ;v26.TextXAlignment=Enum.TextXAlignment.Left;v27.Parent=v26;v28.Name="nYaNn";v28.Parent=v21;v28.BackgroundColor3=Color3.new(285.117647 -(134 + 151) ,1665.117647 -(970 + 695) ,0.117647 -0 );v28.BorderSizePixel=0;v28.Position=UDim2.new(1990 -(582 + 1408) ,0 -0 ,0 -0 ,584 -429 );v28.Size=UDim2.new(1825 -(1195 + 629) ,0 -0 ,0,286 -(187 + 54) );v28.Font=Enum.Font.GothamBold;v28.Text="    nYaNn Hub";v28.TextColor3=Color3.new(1,781 -(162 + 618) ,1 + 0 );v28.TextSize=11 + 5 ;v28.TextXAlignment=Enum.TextXAlignment.Left;v29.Parent=v28;v30.Name="TeddyHubHop";v30.Parent=v21;v30.BackgroundColor3=Color3.new(0.117647 -0 ,0.117647 -0 ,0.117647 + 0 );v30.BorderSizePixel=1636 -(1373 + 263) ;v30.Position=UDim2.new(0,0,1000 -(451 + 549) ,68 + 147 );v30.Size=UDim2.new(1 -0 ,0,0 -0 ,1429 -(746 + 638) );v30.Font=Enum.Font.GothamBold;v30.Text="    Teddy Hub Hop";v30.TextColor3=Color3.new(1 + 0 ,1 -0 ,1);v30.TextSize=357 -(218 + 123) ;v30.TextXAlignment=Enum.TextXAlignment.Left;v31.Parent=v30;v32.Name="TitleBar";v32.Parent=v1;v32.BackgroundColor3=Color3.new(1581.0980392 -(1535 + 46) ,0.0980392 + 0 ,0.0980392 + 0 );v32.BackgroundTransparency=561 -(306 + 254) ;v32.BorderSizePixel=0;v32.Size=UDim2.new(1 + 0 ,0 -0 ,1467 -(899 + 568) ,45);v33.Name="HubTitle";v33.Parent=v32;v33.BackgroundColor3=Color3.new(0.0823529 + 0 ,0.0823529 -0 ,603.0823529 -(268 + 335) );v33.BorderSizePixel=0;v33.Position=UDim2.new(290 -(60 + 230) ,9,572 -(426 + 146) ,7);v33.Size=UDim2.new(1 + 0 , -(1476 -(282 + 1174)),812 -(569 + 242) ,0 -0 );v33.Font=Enum.Font.GothamBold;v33.Text="   Gohan Hub";v33.TextColor3=Color3.new(1 + 0 ,1,1025 -(706 + 318) );v33.TextSize=22;v33.TextXAlignment=Enum.TextXAlignment.Left;v34.Name="by";v34.Parent=v32;v34.BackgroundColor3=Color3.new(1,1252 -(721 + 530) ,1272 -(945 + 326) );v34.BackgroundTransparency=1;v34.BorderColor3=Color3.new(0.282353,0.282353,0.282353 -0 );v34.BorderSizePixel=0;v34.Position=UDim2.new(0.106617644 + 0 ,700 -(271 + 429) ,0.155555561 + 0 ,1500 -(1408 + 92) );v34.Size=UDim2.new(1086 -(461 + 625) ,1488 -(993 + 295) ,0 + 0 ,1221 -(418 + 753) );v34.Font=Enum.Font.SourceSans;v34.Text="by elecgic";v34.TextColor3=Color3.new(1,1,1 + 0 );v34.TextSize=2 + 15 ;v35.Name="ToggleButton";v35.Parent=v0;v35.BackgroundColor3=Color3.new(0.117647 + 0 ,0.117647 + 0 ,529.117647 -(406 + 123) );v35.Position=UDim2.new(1769.105128206 -(1749 + 20) ,0 + 0 ,1322.102604173 -(1249 + 73) ,0 + 0 );v35.Size=UDim2.new(1145 -(466 + 679) ,168 -98 ,0,200 -130 );v35.Font=Enum.Font.SourceSansBold;v35.Text="";v35.TextColor3=Color3.new(1,1901 -(106 + 1794) ,1 + 0 );v35.TextSize=6 + 14 ;v36.Parent=v35;v36.CornerRadius=UDim.new(0 -0 ,15);v37.Parent=v35;v37.BackgroundColor3=Color3.new(1,1,1);v37.BackgroundTransparency=2 -1 ;v37.BorderColor3=Color3.new(0,114 -(4 + 110) ,584 -(57 + 527) );v37.BorderSizePixel=1427 -(41 + 1386) ;v37.Position=UDim2.new(0,0, -0.100000001,103 -(17 + 86) );v37.Size=UDim2.new(1.07142854,0 + 0 ,1.10000002,0 -0 );v37.Image="rbxassetid://79544588720132";v37.ScaleType=Enum.ScaleType.Fit;local function v257() local v265=Instance.new("LocalScript",v1);local v266=v265.Parent.UIStroke;while true do for v304=0,2 -1 ,166.01 -(122 + 44)  do v266.Color=Color3.fromHSV(v304,1 -0 ,3 -2 );task.wait();end end end coroutine.wrap(v257)();local function v258() local v267=Instance.new("LocalScript",v4);local v268=v267.Parent;local v269=v268.Parent:WaitForChild("RightColumn");local v270=v269:WaitForChild("TitleFrame"):WaitForChild("TitleLabel");local v271=v269:WaitForChild("PagesContainer");local v272=nil;local v273={BloxFruits={pageName="BloxFruitsPage",title="⚔️ Blox Fruits"},GrowAGarden={pageName="GrowAGardenPage",title="🌱 Grow a Garden"}};local function v274() for v306,v307 in v271:GetChildren() do if v307:IsA("Frame") then v307.Visible=false;end end end local function v275() if v272 then local v308=0 + 0 ;local v309;while true do if (v308==(0 + 0)) then v309=v272:FindFirstChild("SelectionIndicator");if v309 then v309:Destroy();end break;end end end end local function v276(v294) local v295=0 -0 ;local v296;local v297;local v298;while true do if (v295==(68 -(30 + 35))) then v298=v273[v294.Name];if v298 then v270.Text=v298.title;v274();local v325=v271:FindFirstChild(v298.pageName);if v325 then v325.Visible=true;end end break;end if (v295==(1 + 0)) then v296.Size=UDim2.new(0,1261 -(1043 + 214) ,1,0 -0 );v296.Position=UDim2.new(1212 -(323 + 889) ,0,0,0 -0 );v296.BackgroundColor3=Color3.fromRGB(0,170,255);v296.BorderSizePixel=580 -(361 + 219) ;v295=322 -(53 + 267) ;end if (v295==(0 + 0)) then v275();v272=v294;v296=Instance.new("Frame");v296.Name="SelectionIndicator";v295=414 -(15 + 398) ;end if (v295==2) then v296.Parent=v294;v297=Instance.new("UICorner");v297.CornerRadius=UDim.new(982 -(18 + 964) ,7 -5 );v297.Parent=v296;v295=3;end end end local function v277(v299) v276(v299);end for v300,v301 in v268:GetChildren() do if v301:IsA("TextButton") then v301.MouseButton1Click:Connect(function() v277(v301);end);end end v268.DescendantAdded:Connect(function(v302) if v302:IsA("TextButton") then v302.MouseButton1Click:Connect(function() v277(v302);end);end end);end coroutine.wrap(v258)();local function v259() local v278=Instance.new("LocalScript",v22);local v279=v278.Parent;v279.MouseButton1Click:Connect(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"))();end);end coroutine.wrap(v259)();local function v260() local v280=Instance.new("LocalScript",v24);local v281=v280.Parent;v281.MouseButton1Click:Connect(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))();end);end coroutine.wrap(v260)();local function v261() local v282=0;local v283;local v284;while true do if (v282==(1 + 0)) then v284.MouseButton1Click:Connect(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))();end);break;end if (v282==(0 + 0)) then v283=Instance.new("LocalScript",v26);v284=v283.Parent;v282=851 -(20 + 830) ;end end end coroutine.wrap(v261)();local function v262() local v285=0 + 0 ;local v286;local v287;while true do if (v285==(127 -(116 + 10))) then v287.MouseButton1Click:Connect(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/86224472741926/Anhba/refs/heads/main/Fram%20nyann.txt"))();end);break;end if (v285==(0 + 0)) then v286=Instance.new("LocalScript",v28);v287=v286.Parent;v285=1;end end end coroutine.wrap(v262)();local function v263() local v288=Instance.new("LocalScript",v30);local v289=v288.Parent;v289.MouseButton1Click:Connect(function() repeat task.wait();until game:IsLoaded() and game:GetService("Players") and game.Players.LocalPlayer and game.Players.LocalPlayer:FindFirstChild("PlayerGui")  loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TEDDYHUB-FREEMIUM"))();end);end coroutine.wrap(v263)();local function v264() local v290=Instance.new("LocalScript",v35);local v291=v290.Parent;local v292=v291.Parent:WaitForChild("MainFrame");local v293=true;v291.MouseButton1Click:Connect(function() local v303=738 -(542 + 196) ;while true do if (v303==(0 -0)) then v293= not v293;v292.Visible=v293;v303=1;end if (v303==(1 + 0)) then if v293 then v291.Text=" ";else v291.Text=" ";end break;end end end);end coroutine.wrap(v264)();
+local CustomGuiSystem = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local LeftColumn = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local BloxFruits = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local GrowAGarden = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIPadding = Instance.new("UIPadding")
+local UIListLayout = Instance.new("UIListLayout")
+local Separator = Instance.new("Frame")
+local RightColumn = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local UIPadding_2 = Instance.new("UIPadding")
+local TitleFrame = Instance.new("Frame")
+local TitleLabel = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local PagesContainer = Instance.new("Frame")
+local GrowAGardenPage = Instance.new("Frame")
+local BloxFruitsPage = Instance.new("Frame")
+local QuantumOnyxHub = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local BlueXHub = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local GravityHub = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local nYaNn = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local TeddyHubHop = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local TitleBar = Instance.new("Frame")
+local HubTitle = Instance.new("TextLabel")
+local by = Instance.new("TextLabel")
+local ToggleButton = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+
+-- Properties
+
+CustomGuiSystem.Name = "CustomGuiSystem"
+CustomGuiSystem.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+CustomGuiSystem.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = CustomGuiSystem
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame.Size = UDim2.new(0.850000024, 0, 0.850000024, 0)
+
+UICorner.Parent = MainFrame
+UICorner.CornerRadius = UDim.new(0, 15)
+
+UIAspectRatioConstraint.Parent = MainFrame
+UIAspectRatioConstraint.AspectRatio = 1.25
+
+LeftColumn.Name = "LeftColumn"
+LeftColumn.Parent = MainFrame
+LeftColumn.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+LeftColumn.BorderSizePixel = 0
+LeftColumn.Position = UDim2.new(0, 9, 0, 45)
+LeftColumn.Size = UDim2.new(0.219739825, -2, 1, -45)
+
+UICorner_2.Parent = LeftColumn
+UICorner_2.CornerRadius = UDim.new(0, 15)
+
+BloxFruits.Name = "BloxFruits"
+BloxFruits.Parent = LeftColumn
+BloxFruits.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+BloxFruits.BorderSizePixel = 0
+BloxFruits.Position = UDim2.new(0, -5, 0, 0)
+BloxFruits.Size = UDim2.new(1, 18, 0, 45)
+BloxFruits.Font = Enum.Font.GothamBold
+BloxFruits.Text = "⚔️ Blox Fruits"
+BloxFruits.TextColor3 = Color3.new(1, 1, 1)
+BloxFruits.TextSize = 16
+
+UICorner_3.Parent = BloxFruits
+UICorner_3.CornerRadius = UDim.new(0, 10)
+
+GrowAGarden.Name = "GrowAGarden"
+GrowAGarden.Parent = LeftColumn
+GrowAGarden.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+GrowAGarden.BorderSizePixel = 0
+GrowAGarden.Position = UDim2.new(0, -5, 0, 0)
+GrowAGarden.Size = UDim2.new(1, 18, 0, 45)
+GrowAGarden.Font = Enum.Font.GothamBold
+GrowAGarden.Text = "🌱 Grow a Garden"
+GrowAGarden.TextColor3 = Color3.new(1, 1, 1)
+GrowAGarden.TextSize = 16
+
+UICorner_4.Parent = GrowAGarden
+UICorner_4.CornerRadius = UDim.new(0, 10)
+
+UIPadding.Parent = LeftColumn
+UIPadding.PaddingBottom = UDim.new(0, 25)
+UIPadding.PaddingLeft = UDim.new(0, 5)
+UIPadding.PaddingRight = UDim.new(0, 25)
+UIPadding.PaddingTop = UDim.new(0, 25)
+
+UIListLayout.Parent = LeftColumn
+UIListLayout.Padding = UDim.new(0, 15)
+
+Separator.Name = "Separator"
+Separator.Parent = MainFrame
+Separator.BackgroundColor3 = Color3.new(1, 1, 1)
+Separator.BorderSizePixel = 0
+Separator.Position = UDim2.new(0.229543731, -1, 0, 45)
+Separator.Size = UDim2.new(0.0012254715, 2, 0.934469581, -45)
+
+RightColumn.Name = "RightColumn"
+RightColumn.Parent = MainFrame
+RightColumn.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+RightColumn.BorderSizePixel = 0
+RightColumn.Position = UDim2.new(0.230769143, 2, 0, 45)
+RightColumn.Size = UDim2.new(0.755750477, -2, 1, -45)
+
+UICorner_5.Parent = RightColumn
+UICorner_5.CornerRadius = UDim.new(0, 10)
+
+UIPadding_2.Parent = RightColumn
+UIPadding_2.PaddingBottom = UDim.new(0, 25)
+UIPadding_2.PaddingLeft = UDim.new(0, 25)
+UIPadding_2.PaddingRight = UDim.new(0, 25)
+UIPadding_2.PaddingTop = UDim.new(0, 25)
+
+TitleFrame.Name = "TitleFrame"
+TitleFrame.Parent = RightColumn
+TitleFrame.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+TitleFrame.BackgroundTransparency = 1
+TitleFrame.BorderSizePixel = 0
+TitleFrame.Size = UDim2.new(1, 0, 0, 40)
+
+TitleLabel.Name = "TitleLabel"
+TitleLabel.Parent = TitleFrame
+TitleLabel.BackgroundTransparency = 1
+TitleLabel.Position = UDim2.new(0, 9, 0, -29)
+TitleLabel.Size = UDim2.new(1, -20, 1, 0)
+TitleLabel.Font = Enum.Font.GothamBold
+TitleLabel.Text = "Select a game"
+TitleLabel.TextColor3 = Color3.new(1, 1, 1)
+TitleLabel.TextSize = 18
+TitleLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_6.Parent = TitleFrame
+
+PagesContainer.Name = "PagesContainer"
+PagesContainer.Parent = RightColumn
+PagesContainer.BackgroundTransparency = 1
+PagesContainer.Position = UDim2.new(0, 0, 0, 50)
+PagesContainer.Size = UDim2.new(1, 0, 1, -50)
+
+GrowAGardenPage.Name = "GrowAGardenPage"
+GrowAGardenPage.Parent = PagesContainer
+GrowAGardenPage.BackgroundTransparency = 1
+GrowAGardenPage.Size = UDim2.new(1, 0, 1, 0)
+GrowAGardenPage.Visible = false
+
+BloxFruitsPage.Name = "BloxFruitsPage"
+BloxFruitsPage.Parent = PagesContainer
+BloxFruitsPage.BackgroundTransparency = 1
+BloxFruitsPage.Size = UDim2.new(1, 0, 1, 0)
+BloxFruitsPage.Visible = false
+
+QuantumOnyxHub.Name = "QuantumOnyxHub"
+QuantumOnyxHub.Parent = BloxFruitsPage
+QuantumOnyxHub.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+QuantumOnyxHub.BorderSizePixel = 0
+QuantumOnyxHub.Position = UDim2.new(0, 0, 0, -25)
+QuantumOnyxHub.Size = UDim2.new(1, 0, 0, 45)
+QuantumOnyxHub.Font = Enum.Font.GothamBold
+QuantumOnyxHub.Text = "   QuantumOnyx Hub"
+QuantumOnyxHub.TextColor3 = Color3.new(1, 1, 1)
+QuantumOnyxHub.TextSize = 16
+QuantumOnyxHub.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_7.Parent = QuantumOnyxHub
+UICorner_7.CornerRadius = UDim.new(0, 6)
+
+BlueXHub.Name = "BlueXHub"
+BlueXHub.Parent = BloxFruitsPage
+BlueXHub.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+BlueXHub.BorderSizePixel = 0
+BlueXHub.Position = UDim2.new(0, 0, 0, 35)
+BlueXHub.Size = UDim2.new(1, 0, 0, 45)
+BlueXHub.Font = Enum.Font.GothamBold
+BlueXHub.Text = "    Blue X Hub"
+BlueXHub.TextColor3 = Color3.new(1, 1, 1)
+BlueXHub.TextSize = 16
+BlueXHub.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_8.Parent = BlueXHub
+
+GravityHub.Name = "GravityHub"
+GravityHub.Parent = BloxFruitsPage
+GravityHub.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+GravityHub.BorderSizePixel = 0
+GravityHub.Position = UDim2.new(0, 0, 0, 95)
+GravityHub.Size = UDim2.new(1, 0, 0, 45)
+GravityHub.Font = Enum.Font.GothamBold
+GravityHub.Text = "    Gravity Hub"
+GravityHub.TextColor3 = Color3.new(1, 1, 1)
+GravityHub.TextSize = 16
+GravityHub.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_9.Parent = GravityHub
+
+nYaNn.Name = "nYaNn"
+nYaNn.Parent = BloxFruitsPage
+nYaNn.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+nYaNn.BorderSizePixel = 0
+nYaNn.Position = UDim2.new(0, 0, 0, 155)
+nYaNn.Size = UDim2.new(1, 0, 0, 45)
+nYaNn.Font = Enum.Font.GothamBold
+nYaNn.Text = "    nYaNn Hub"
+nYaNn.TextColor3 = Color3.new(1, 1, 1)
+nYaNn.TextSize = 16
+nYaNn.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_10.Parent = nYaNn
+
+TeddyHubHop.Name = "TeddyHubHop"
+TeddyHubHop.Parent = BloxFruitsPage
+TeddyHubHop.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+TeddyHubHop.BorderSizePixel = 0
+TeddyHubHop.Position = UDim2.new(0, 0, 0, 215)
+TeddyHubHop.Size = UDim2.new(1, 0, 0, 45)
+TeddyHubHop.Font = Enum.Font.GothamBold
+TeddyHubHop.Text = "    Teddy Hub Hop"
+TeddyHubHop.TextColor3 = Color3.new(1, 1, 1)
+TeddyHubHop.TextSize = 16
+TeddyHubHop.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_11.Parent = TeddyHubHop
+
+TitleBar.Name = "TitleBar"
+TitleBar.Parent = MainFrame
+TitleBar.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+TitleBar.BackgroundTransparency = 1
+TitleBar.BorderSizePixel = 0
+TitleBar.Size = UDim2.new(1, 0, 0, 45)
+
+HubTitle.Name = "HubTitle"
+HubTitle.Parent = TitleBar
+HubTitle.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+HubTitle.BorderSizePixel = 0
+HubTitle.Position = UDim2.new(0, 9, 0, 7)
+HubTitle.Size = UDim2.new(1, -20, 1, 0)
+HubTitle.Font = Enum.Font.GothamBold
+HubTitle.Text = "   Gohan Hub"
+HubTitle.TextColor3 = Color3.new(1, 1, 1)
+HubTitle.TextSize = 22
+HubTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+by.Name = "by"
+by.Parent = TitleBar
+by.BackgroundColor3 = Color3.new(1, 1, 1)
+by.BackgroundTransparency = 1
+by.BorderColor3 = Color3.new(0.282353, 0.282353, 0.282353)
+by.BorderSizePixel = 0
+by.Position = UDim2.new(0.106617644, 0, 0.155555561, 0)
+by.Size = UDim2.new(0, 200, 0, 50)
+by.Font = Enum.Font.SourceSans
+by.Text = "by elecgic"
+by.TextColor3 = Color3.new(1, 1, 1)
+by.TextSize = 17
+
+ToggleButton.Name = "ToggleButton"
+ToggleButton.Parent = CustomGuiSystem
+ToggleButton.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+ToggleButton.Position = UDim2.new(0.105128206, 0, 0.102604173, 0)
+ToggleButton.Size = UDim2.new(0, 70, 0, 70)
+ToggleButton.Font = Enum.Font.SourceSansBold
+ToggleButton.Text = ""
+ToggleButton.TextColor3 = Color3.new(1, 1, 1)
+ToggleButton.TextSize = 20
+
+UICorner_12.Parent = ToggleButton
+UICorner_12.CornerRadius = UDim.new(0, 15)
+
+ImageLabel.Parent = ToggleButton
+ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0, 0, -0.100000001, 0)
+ImageLabel.Size = UDim2.new(1.07142854, 0, 1.10000002, 0)
+ImageLabel.Image = "rbxassetid://79544588720132"
+ImageLabel.ScaleType = Enum.ScaleType.Fit
+
+-- Scripts
+
+local function CBTV_fake_script() -- MainFrame.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local stroke = script.Parent.UIStroke
+	
+	while true do
+		for i = 0, 1, 0.01 do
+			stroke.Color = Color3.fromHSV(i,1,1)
+			task.wait()
+		end
+	end
+end
+coroutine.wrap(CBTV_fake_script)()
+local function NIDPXR_fake_script() -- LeftColumn.SelectionScript 
+	local script = Instance.new('LocalScript', LeftColumn)
+
+	local leftColumn = script.Parent
+	local rightColumn = leftColumn.Parent:WaitForChild("RightColumn")
+	local titleLabel = rightColumn:WaitForChild("TitleFrame"):WaitForChild("TitleLabel")
+	local pagesContainer = rightColumn:WaitForChild("PagesContainer")
+	
+	local selectedButton = nil
+	
+	-- Map button name to page name and title
+	local pageMapping = {
+		["BloxFruits"] = {pageName = "BloxFruitsPage", title = "⚔️ Blox Fruits"},
+		["GrowAGarden"] = {pageName = "GrowAGardenPage", title = "🌱 Grow a Garden"}
+	}
+	
+	local function hideAllPages()
+		for _, page in pagesContainer:GetChildren() do
+			if page:IsA("Frame") then
+				page.Visible = false
+			end
+		end
+	end
+	
+	local function clearSelection()
+		if selectedButton then
+			local indicator = selectedButton:FindFirstChild("SelectionIndicator")
+			if indicator then
+				indicator:Destroy()
+			end
+		end
+	end
+	
+	local function setSelection(button)
+		clearSelection()
+		selectedButton = button
+		
+		-- Thêm sọc xanh dương ở cạnh bên trái
+		local indicator = Instance.new("Frame")
+		indicator.Name = "SelectionIndicator"
+		indicator.Size = UDim2.new(0, 4, 1, 0)
+		indicator.Position = UDim2.new(0, 0, 0, 0)
+		indicator.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+		indicator.BorderSizePixel = 0
+		indicator.Parent = button
+		
+		-- Thêm UICorner để bo tròn nhẹ
+		local corner = Instance.new("UICorner")
+		corner.CornerRadius = UDim.new(0, 2)
+		corner.Parent = indicator
+		
+		-- Cập nhật Title và hiển thị trang tương ứng
+		local mapping = pageMapping[button.Name]
+		if mapping then
+			titleLabel.Text = mapping.title
+			hideAllPages()
+			local page = pagesContainer:FindFirstChild(mapping.pageName)
+			if page then
+				page.Visible = true
+			end
+		end
+	end
+	
+	local function onButtonClicked(button)
+		setSelection(button)
+	end
+	
+	-- Thiết lập sự kiện click cho tất cả TextButton trong LeftColumn
+	for _, child in leftColumn:GetChildren() do
+		if child:IsA("TextButton") then
+			child.MouseButton1Click:Connect(function()
+				onButtonClicked(child)
+			end)
+		end
+	end
+	
+	-- Lắng nghe khi có TextButton mới được thêm vào
+	leftColumn.DescendantAdded:Connect(function(descendant)
+		if descendant:IsA("TextButton") then
+			descendant.MouseButton1Click:Connect(function()
+				onButtonClicked(descendant)
+			end)
+		end
+	end)
+end
+coroutine.wrap(NIDPXR_fake_script)()
+local function OMXXB_fake_script() -- QuantumOnyxHub.ClickScript 
+	local script = Instance.new('LocalScript', QuantumOnyxHub)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"))()
+	end)
+end
+coroutine.wrap(OMXXB_fake_script)()
+local function MSNA_fake_script() -- BlueXHub.ClickScript 
+	local script = Instance.new('LocalScript', BlueXHub)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()    
+	end)
+end
+coroutine.wrap(MSNA_fake_script)()
+local function GZWTAC_fake_script() -- GravityHub.ClickScript 
+	local script = Instance.new('LocalScript', GravityHub)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))()
+	end)
+end
+coroutine.wrap(GZWTAC_fake_script)()
+local function MXBDWAZ_fake_script() -- nYaNn.ClickScript 
+	local script = Instance.new('LocalScript', nYaNn)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/86224472741926/Anhba/refs/heads/main/Fram%20nyann.txt"))()
+	end)
+end
+coroutine.wrap(MXBDWAZ_fake_script)()
+local function OJXGT_fake_script() -- TeddyHubHop.ClickScript 
+	local script = Instance.new('LocalScript', TeddyHubHop)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		repeat task.wait() until game:IsLoaded() and game:GetService("Players") and game.Players.LocalPlayer and game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TEDDYHUB-FREEMIUM"))()
+	end)
+end
+coroutine.wrap(OJXGT_fake_script)()
+local function MPFCMQH_fake_script() -- ToggleButton.LocalScript 
+	local script = Instance.new('LocalScript', ToggleButton)
+
+	local toggleButton = script.Parent
+	local mainFrame = toggleButton.Parent:WaitForChild("MainFrame")
+	
+	local isVisible = true
+	
+	toggleButton.MouseButton1Click:Connect(function()
+		isVisible = not isVisible
+		mainFrame.Visible = isVisible
+	
+		if isVisible then
+			toggleButton.Text = " "
+		else
+			toggleButton.Text = " "
+		end
+	end)
+end
+coroutine.wrap(MPFCMQH_fake_script)()
