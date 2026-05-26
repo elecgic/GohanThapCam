@@ -1,356 +1,466 @@
-local CustomGuiSystem = Instance.new("ScreenGui")
-CustomGuiSystem.Name = "CustomGuiSystem"
-CustomGuiSystem.ResetOnSpawn = false
-CustomGuiSystem.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
+local CustomGuiSystem = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local LeftColumn = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local BloxFruits = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local GrowAGarden = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIPadding = Instance.new("UIPadding")
+local UIListLayout = Instance.new("UIListLayout")
+local Separator = Instance.new("Frame")
+local RightColumn = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local UIPadding_2 = Instance.new("UIPadding")
+local TitleFrame = Instance.new("Frame")
+local TitleLabel = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local PagesContainer = Instance.new("Frame")
+local GrowAGardenPage = Instance.new("Frame")
+local BloxFruitsPage = Instance.new("Frame")
+local QuantumOnyxHub = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local BlueXHub = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local GravityHub = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local nYaNn = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local TeddyHubHop = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local TitleBar = Instance.new("Frame")
+local HubTitle = Instance.new("TextLabel")
+local by = Instance.new("TextLabel")
+local ToggleButton = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+
+-- Properties
+
+CustomGuiSystem.Name = "CustomGuiSystem"
+CustomGuiSystem.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+CustomGuiSystem.ResetOnSpawn = false
+
 MainFrame.Name = "MainFrame"
-MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
-MainFrame.Size = UDim2.new(0.85, 0, 0.85, 0)
+MainFrame.Parent = CustomGuiSystem
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 MainFrame.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
 MainFrame.BorderSizePixel = 0
-MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-MainFrame.Parent = CustomGuiSystem
+MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame.Size = UDim2.new(0.850000024, 0, 0.850000024, 0)
 
-local UICorner = Instance.new("UICorner")
-UICorner.Name = "UICorner"
-UICorner.CornerRadius = UDim.new(0, 15)
 UICorner.Parent = MainFrame
+UICorner.CornerRadius = UDim.new(0, 15)
 
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-UIAspectRatioConstraint.Name = "UIAspectRatioConstraint"
-UIAspectRatioConstraint.AspectRatio = 1.25
 UIAspectRatioConstraint.Parent = MainFrame
+UIAspectRatioConstraint.AspectRatio = 1.25
 
-local LeftColumn = Instance.new("Frame")
 LeftColumn.Name = "LeftColumn"
-LeftColumn.Position = UDim2.new(0, 9, 0, 45)
-LeftColumn.Size = UDim2.new(0.21974, -2, 1, -45)
+LeftColumn.Parent = MainFrame
 LeftColumn.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
 LeftColumn.BorderSizePixel = 0
-LeftColumn.Parent = MainFrame
+LeftColumn.Position = UDim2.new(0, 9, 0, 45)
+LeftColumn.Size = UDim2.new(0.219739825, -2, 1, -45)
 
-local UICorner2 = Instance.new("UICorner")
-UICorner2.Name = "UICorner"
-UICorner2.CornerRadius = UDim.new(0, 15)
-UICorner2.Parent = LeftColumn
+UICorner_2.Parent = LeftColumn
+UICorner_2.CornerRadius = UDim.new(0, 15)
 
-local BloxFruits = Instance.new("TextButton")
 BloxFruits.Name = "BloxFruits"
-BloxFruits.Position = UDim2.new(0, -5, 0, 0)
-BloxFruits.Size = UDim2.new(1, 18, 0, 45)
+BloxFruits.Parent = LeftColumn
 BloxFruits.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
 BloxFruits.BorderSizePixel = 0
+BloxFruits.Position = UDim2.new(0, -5, 0, 0)
+BloxFruits.Size = UDim2.new(1, 18, 0, 45)
+BloxFruits.Font = Enum.Font.GothamBold
 BloxFruits.Text = "⚔️ Blox Fruits"
 BloxFruits.TextColor3 = Color3.new(1, 1, 1)
 BloxFruits.TextSize = 16
-BloxFruits.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-BloxFruits.Parent = LeftColumn
 
-local UICorner3 = Instance.new("UICorner")
-UICorner3.Name = "UICorner"
-UICorner3.CornerRadius = UDim.new(0, 10)
-UICorner3.Parent = BloxFruits
+UICorner_3.Parent = BloxFruits
+UICorner_3.CornerRadius = UDim.new(0, 10)
 
-local GrowAGarden = Instance.new("TextButton")
 GrowAGarden.Name = "GrowAGarden"
-GrowAGarden.Position = UDim2.new(0, -5, 0, 0)
-GrowAGarden.Size = UDim2.new(1, 18, 0, 45)
+GrowAGarden.Parent = LeftColumn
 GrowAGarden.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
 GrowAGarden.BorderSizePixel = 0
+GrowAGarden.Position = UDim2.new(0, -5, 0, 0)
+GrowAGarden.Size = UDim2.new(1, 18, 0, 45)
+GrowAGarden.Font = Enum.Font.GothamBold
 GrowAGarden.Text = "🌱 Grow a Garden"
 GrowAGarden.TextColor3 = Color3.new(1, 1, 1)
 GrowAGarden.TextSize = 16
-GrowAGarden.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-GrowAGarden.Parent = LeftColumn
 
-local UICorner4 = Instance.new("UICorner")
-UICorner4.Name = "UICorner"
-UICorner4.CornerRadius = UDim.new(0, 10)
-UICorner4.Parent = GrowAGarden
+UICorner_4.Parent = GrowAGarden
+UICorner_4.CornerRadius = UDim.new(0, 10)
 
-local UIPadding = Instance.new("UIPadding")
-UIPadding.Name = "UIPadding"
-UIPadding.PaddingTop = UDim.new(0, 25)
+UIPadding.Parent = LeftColumn
 UIPadding.PaddingBottom = UDim.new(0, 25)
 UIPadding.PaddingLeft = UDim.new(0, 5)
 UIPadding.PaddingRight = UDim.new(0, 25)
-UIPadding.Parent = LeftColumn
+UIPadding.PaddingTop = UDim.new(0, 25)
 
-local UIListLayout = Instance.new("UIListLayout")
-UIListLayout.Name = "UIListLayout"
-UIListLayout.Padding = UDim.new(0, 15)
 UIListLayout.Parent = LeftColumn
+UIListLayout.Padding = UDim.new(0, 15)
 
-local Separator = Instance.new("Frame")
 Separator.Name = "Separator"
-Separator.Position = UDim2.new(0.229544, -1, 0, 45)
-Separator.Size = UDim2.new(0.00122547, 2, 0.93447, -45)
+Separator.Parent = MainFrame
 Separator.BackgroundColor3 = Color3.new(1, 1, 1)
 Separator.BorderSizePixel = 0
-Separator.Parent = MainFrame
+Separator.Position = UDim2.new(0.229543731, -1, 0, 45)
+Separator.Size = UDim2.new(0.0012254715, 2, 0.934469581, -45)
 
-local RightColumn = Instance.new("Frame")
 RightColumn.Name = "RightColumn"
-RightColumn.Position = UDim2.new(0.230769, 2, 0, 45)
-RightColumn.Size = UDim2.new(0.75575, -2, 1, -45)
+RightColumn.Parent = MainFrame
 RightColumn.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
 RightColumn.BorderSizePixel = 0
-RightColumn.Parent = MainFrame
+RightColumn.Position = UDim2.new(0.230769143, 2, 0, 45)
+RightColumn.Size = UDim2.new(0.755750477, -2, 1, -45)
 
-local UICorner5 = Instance.new("UICorner")
-UICorner5.Name = "UICorner"
-UICorner5.CornerRadius = UDim.new(0, 10)
-UICorner5.Parent = RightColumn
+UICorner_5.Parent = RightColumn
+UICorner_5.CornerRadius = UDim.new(0, 10)
 
-local UIPadding2 = Instance.new("UIPadding")
-UIPadding2.Name = "UIPadding"
-UIPadding2.PaddingTop = UDim.new(0, 25)
-UIPadding2.PaddingBottom = UDim.new(0, 25)
-UIPadding2.PaddingLeft = UDim.new(0, 25)
-UIPadding2.PaddingRight = UDim.new(0, 25)
-UIPadding2.Parent = RightColumn
+UIPadding_2.Parent = RightColumn
+UIPadding_2.PaddingBottom = UDim.new(0, 25)
+UIPadding_2.PaddingLeft = UDim.new(0, 25)
+UIPadding_2.PaddingRight = UDim.new(0, 25)
+UIPadding_2.PaddingTop = UDim.new(0, 25)
 
-local TitleFrame = Instance.new("Frame")
 TitleFrame.Name = "TitleFrame"
-TitleFrame.Size = UDim2.new(1, 0, 0, 40)
+TitleFrame.Parent = RightColumn
 TitleFrame.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
 TitleFrame.BackgroundTransparency = 1
 TitleFrame.BorderSizePixel = 0
-TitleFrame.Transparency = 1
-TitleFrame.Parent = RightColumn
+TitleFrame.Size = UDim2.new(1, 0, 0, 40)
 
-local TitleLabel = Instance.new("TextLabel")
 TitleLabel.Name = "TitleLabel"
+TitleLabel.Parent = TitleFrame
+TitleLabel.BackgroundTransparency = 1
 TitleLabel.Position = UDim2.new(0, 9, 0, -29)
 TitleLabel.Size = UDim2.new(1, -20, 1, 0)
-TitleLabel.BackgroundTransparency = 1
-TitleLabel.Transparency = 1
+TitleLabel.Font = Enum.Font.GothamBold
 TitleLabel.Text = "Select a game"
 TitleLabel.TextColor3 = Color3.new(1, 1, 1)
 TitleLabel.TextSize = 18
-TitleLabel.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
 TitleLabel.TextXAlignment = Enum.TextXAlignment.Left
-TitleLabel.Parent = TitleFrame
 
-local UICorner6 = Instance.new("UICorner")
-UICorner6.Name = "UICorner"
+UICorner_6.Parent = TitleFrame
 
-UICorner6.Parent = TitleFrame
-
-local PagesContainer = Instance.new("Frame")
 PagesContainer.Name = "PagesContainer"
+PagesContainer.Parent = RightColumn
+PagesContainer.BackgroundTransparency = 1
 PagesContainer.Position = UDim2.new(0, 0, 0, 50)
 PagesContainer.Size = UDim2.new(1, 0, 1, -50)
-PagesContainer.BackgroundTransparency = 1
-PagesContainer.Transparency = 1
-PagesContainer.Parent = RightColumn
 
-local GrowAGardenPage = Instance.new("Frame")
 GrowAGardenPage.Name = "GrowAGardenPage"
-GrowAGardenPage.Size = UDim2.new(1, 0, 1, 0)
-GrowAGardenPage.BackgroundTransparency = 1
-GrowAGardenPage.Visible = false
-GrowAGardenPage.Transparency = 1
 GrowAGardenPage.Parent = PagesContainer
+GrowAGardenPage.BackgroundTransparency = 1
+GrowAGardenPage.Size = UDim2.new(1, 0, 1, 0)
+GrowAGardenPage.Visible = false
 
-local BloxFruitsPage = Instance.new("Frame")
 BloxFruitsPage.Name = "BloxFruitsPage"
-BloxFruitsPage.Size = UDim2.new(1, 0, 1, 0)
-BloxFruitsPage.BackgroundTransparency = 1
-BloxFruitsPage.Visible = false
-BloxFruitsPage.Transparency = 1
 BloxFruitsPage.Parent = PagesContainer
+BloxFruitsPage.BackgroundTransparency = 1
+BloxFruitsPage.Size = UDim2.new(1, 0, 1, 0)
+BloxFruitsPage.Visible = false
 
-local QuantumOnyxHub = Instance.new("TextButton")
 QuantumOnyxHub.Name = "QuantumOnyxHub"
-QuantumOnyxHub.Position = UDim2.new(0, 0, 0, -25)
-QuantumOnyxHub.Size = UDim2.new(1, 0, 0, 45)
+QuantumOnyxHub.Parent = BloxFruitsPage
 QuantumOnyxHub.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
 QuantumOnyxHub.BorderSizePixel = 0
+QuantumOnyxHub.Position = UDim2.new(0, 0, 0, -25)
+QuantumOnyxHub.Size = UDim2.new(1, 0, 0, 45)
+QuantumOnyxHub.Font = Enum.Font.GothamBold
 QuantumOnyxHub.Text = "   QuantumOnyx Hub"
 QuantumOnyxHub.TextColor3 = Color3.new(1, 1, 1)
 QuantumOnyxHub.TextSize = 16
-QuantumOnyxHub.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
 QuantumOnyxHub.TextXAlignment = Enum.TextXAlignment.Left
-QuantumOnyxHub.Parent = BloxFruitsPage
 
-local UICorner7 = Instance.new("UICorner")
-UICorner7.Name = "UICorner"
-UICorner7.CornerRadius = UDim.new(0, 6)
-UICorner7.Parent = QuantumOnyxHub
+UICorner_7.Parent = QuantumOnyxHub
+UICorner_7.CornerRadius = UDim.new(0, 6)
 
-local UIStroke = Instance.new("UIStroke")
-UIStroke.Name = "UIStroke"
-UIStroke.Color = Color3.new(0.235294, 0.235294, 0.235294)
-UIStroke.Parent = QuantumOnyxHub
-
-local BlueXHub = Instance.new("TextButton")
 BlueXHub.Name = "BlueXHub"
-BlueXHub.Position = UDim2.new(0, 0, 0, 35)
-BlueXHub.Size = UDim2.new(1, 0, 0, 45)
+BlueXHub.Parent = BloxFruitsPage
 BlueXHub.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
 BlueXHub.BorderSizePixel = 0
+BlueXHub.Position = UDim2.new(0, 0, 0, 35)
+BlueXHub.Size = UDim2.new(1, 0, 0, 45)
+BlueXHub.Font = Enum.Font.GothamBold
 BlueXHub.Text = "    Blue X Hub"
 BlueXHub.TextColor3 = Color3.new(1, 1, 1)
 BlueXHub.TextSize = 16
-BlueXHub.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
 BlueXHub.TextXAlignment = Enum.TextXAlignment.Left
-BlueXHub.Parent = BloxFruitsPage
 
-local UICorner8 = Instance.new("UICorner")
-UICorner8.Name = "UICorner"
+UICorner_8.Parent = BlueXHub
 
-UICorner8.Parent = BlueXHub
-
-local UIStroke2 = Instance.new("UIStroke")
-UIStroke2.Name = "UIStroke"
-UIStroke2.Color = Color3.new(0.196078, 0.196078, 0.196078)
-UIStroke2.Parent = BlueXHub
-
-local GravityHub = Instance.new("TextButton")
 GravityHub.Name = "GravityHub"
-GravityHub.Position = UDim2.new(0, 0, 0, 95)
-GravityHub.Size = UDim2.new(1, 0, 0, 45)
+GravityHub.Parent = BloxFruitsPage
 GravityHub.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
 GravityHub.BorderSizePixel = 0
+GravityHub.Position = UDim2.new(0, 0, 0, 95)
+GravityHub.Size = UDim2.new(1, 0, 0, 45)
+GravityHub.Font = Enum.Font.GothamBold
 GravityHub.Text = "    Gravity Hub"
 GravityHub.TextColor3 = Color3.new(1, 1, 1)
 GravityHub.TextSize = 16
-GravityHub.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
 GravityHub.TextXAlignment = Enum.TextXAlignment.Left
-GravityHub.Parent = BloxFruitsPage
 
-local UICorner9 = Instance.new("UICorner")
-UICorner9.Name = "UICorner"
+UICorner_9.Parent = GravityHub
 
-UICorner9.Parent = GravityHub
-
-local UIStroke3 = Instance.new("UIStroke")
-UIStroke3.Name = "UIStroke"
-UIStroke3.Color = Color3.new(0.196078, 0.196078, 0.196078)
-UIStroke3.Parent = GravityHub
-
-local nYaNn = Instance.new("TextButton")
 nYaNn.Name = "nYaNn"
-nYaNn.Position = UDim2.new(0, 0, 0, 155)
-nYaNn.Size = UDim2.new(1, 0, 0, 45)
+nYaNn.Parent = BloxFruitsPage
 nYaNn.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
 nYaNn.BorderSizePixel = 0
+nYaNn.Position = UDim2.new(0, 0, 0, 155)
+nYaNn.Size = UDim2.new(1, 0, 0, 45)
+nYaNn.Font = Enum.Font.GothamBold
 nYaNn.Text = "    nYaNn Hub"
 nYaNn.TextColor3 = Color3.new(1, 1, 1)
 nYaNn.TextSize = 16
-nYaNn.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
 nYaNn.TextXAlignment = Enum.TextXAlignment.Left
-nYaNn.Parent = BloxFruitsPage
 
-local UICorner10 = Instance.new("UICorner")
-UICorner10.Name = "UICorner"
+UICorner_10.Parent = nYaNn
 
-UICorner10.Parent = nYaNn
-
-local UIStroke4 = Instance.new("UIStroke")
-UIStroke4.Name = "UIStroke"
-UIStroke4.Color = Color3.new(0.196078, 0.196078, 0.196078)
-UIStroke4.Parent = nYaNn
-
-local TeddyHubHop = Instance.new("TextButton")
 TeddyHubHop.Name = "TeddyHubHop"
-TeddyHubHop.Position = UDim2.new(0, 0, 0, 215)
-TeddyHubHop.Size = UDim2.new(1, 0, 0, 45)
+TeddyHubHop.Parent = BloxFruitsPage
 TeddyHubHop.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
 TeddyHubHop.BorderSizePixel = 0
+TeddyHubHop.Position = UDim2.new(0, 0, 0, 215)
+TeddyHubHop.Size = UDim2.new(1, 0, 0, 45)
+TeddyHubHop.Font = Enum.Font.GothamBold
 TeddyHubHop.Text = "    Teddy Hub Hop"
 TeddyHubHop.TextColor3 = Color3.new(1, 1, 1)
 TeddyHubHop.TextSize = 16
-TeddyHubHop.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
 TeddyHubHop.TextXAlignment = Enum.TextXAlignment.Left
-TeddyHubHop.Parent = BloxFruitsPage
 
-local UICorner11 = Instance.new("UICorner")
-UICorner11.Name = "UICorner"
+UICorner_11.Parent = TeddyHubHop
 
-UICorner11.Parent = TeddyHubHop
-
-local UIStroke5 = Instance.new("UIStroke")
-UIStroke5.Name = "UIStroke"
-UIStroke5.Color = Color3.new(0.196078, 0.196078, 0.196078)
-UIStroke5.Parent = TeddyHubHop
-
-local TitleBar = Instance.new("Frame")
 TitleBar.Name = "TitleBar"
-TitleBar.Size = UDim2.new(1, 0, 0, 45)
+TitleBar.Parent = MainFrame
 TitleBar.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
 TitleBar.BackgroundTransparency = 1
 TitleBar.BorderSizePixel = 0
-TitleBar.Transparency = 1
-TitleBar.Parent = MainFrame
+TitleBar.Size = UDim2.new(1, 0, 0, 45)
 
-local HubTitle = Instance.new("TextLabel")
 HubTitle.Name = "HubTitle"
-HubTitle.Position = UDim2.new(0, 9, 0, 7)
-HubTitle.Size = UDim2.new(1, -20, 1, 0)
+HubTitle.Parent = TitleBar
 HubTitle.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
 HubTitle.BorderSizePixel = 0
+HubTitle.Position = UDim2.new(0, 9, 0, 7)
+HubTitle.Size = UDim2.new(1, -20, 1, 0)
+HubTitle.Font = Enum.Font.GothamBold
 HubTitle.Text = "   Gohan Hub"
 HubTitle.TextColor3 = Color3.new(1, 1, 1)
 HubTitle.TextSize = 22
-HubTitle.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
 HubTitle.TextXAlignment = Enum.TextXAlignment.Left
-HubTitle.Parent = TitleBar
 
-local by = Instance.new("TextLabel")
 by.Name = "by"
-by.Position = UDim2.new(0.106618, 0, 0.155556, 0)
-by.Size = UDim2.new(0, 200, 0, 50)
+by.Parent = TitleBar
 by.BackgroundColor3 = Color3.new(1, 1, 1)
 by.BackgroundTransparency = 1
-by.BorderSizePixel = 0
 by.BorderColor3 = Color3.new(0.282353, 0.282353, 0.282353)
-by.Transparency = 1
+by.BorderSizePixel = 0
+by.Position = UDim2.new(0.106617644, 0, 0.155555561, 0)
+by.Size = UDim2.new(0, 200, 0, 50)
+by.Font = Enum.Font.SourceSans
 by.Text = "by elecgic"
 by.TextColor3 = Color3.new(1, 1, 1)
 by.TextSize = 17
-by.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-by.Parent = TitleBar
 
-local UIStroke6 = Instance.new("UIStroke")
-UIStroke6.Name = "UIStroke"
-UIStroke6.Thickness = 3
-UIStroke6.Parent = MainFrame
-
-local ToggleButton = Instance.new("TextButton")
 ToggleButton.Name = "ToggleButton"
-ToggleButton.Position = UDim2.new(0.105128, 0, 0.102604, 0)
-ToggleButton.Size = UDim2.new(0, 70, 0, 70)
+ToggleButton.Parent = CustomGuiSystem
 ToggleButton.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+ToggleButton.Position = UDim2.new(0.105128206, 0, 0.102604173, 0)
+ToggleButton.Size = UDim2.new(0, 70, 0, 70)
+ToggleButton.Font = Enum.Font.SourceSansBold
 ToggleButton.Text = ""
 ToggleButton.TextColor3 = Color3.new(1, 1, 1)
 ToggleButton.TextSize = 20
-ToggleButton.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-ToggleButton.Parent = CustomGuiSystem
 
-local UICorner12 = Instance.new("UICorner")
-UICorner12.Name = "UICorner"
-UICorner12.CornerRadius = UDim.new(0, 15)
-UICorner12.Parent = ToggleButton
+UICorner_12.Parent = ToggleButton
+UICorner_12.CornerRadius = UDim.new(0, 15)
 
-local UIStroke7 = Instance.new("UIStroke")
-UIStroke7.Name = "UIStroke"
-UIStroke7.Color = Color3.new(1, 0.921569, 0)
-UIStroke7.Thickness = 1.5
-UIStroke7.Parent = ToggleButton
-
-local ImageLabel = Instance.new("ImageLabel")
-ImageLabel.Name = "ImageLabel"
-ImageLabel.Position = UDim2.new(0, 0, -0.1, 0)
-ImageLabel.Size = UDim2.new(1.07143, 0, 1.1, 0)
+ImageLabel.Parent = ToggleButton
 ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
 ImageLabel.BackgroundTransparency = 1
-ImageLabel.BorderSizePixel = 0
 ImageLabel.BorderColor3 = Color3.new(0, 0, 0)
-ImageLabel.Transparency = 1
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0, 0, -0.100000001, 0)
+ImageLabel.Size = UDim2.new(1.07142854, 0, 1.10000002, 0)
 ImageLabel.Image = "rbxassetid://79544588720132"
 ImageLabel.ScaleType = Enum.ScaleType.Fit
-ImageLabel.Parent = ToggleButton
 
+-- Scripts
+
+local function STFM_fake_script() -- MainFrame.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local stroke = script.Parent.UIStroke
+	
+	while true do
+		for i = 0, 1, 0.01 do
+			stroke.Color = Color3.fromHSV(i,1,1)
+			task.wait()
+		end
+	end
+end
+coroutine.wrap(STFM_fake_script)()
+local function DJXPPB_fake_script() -- LeftColumn.SelectionScript 
+	local script = Instance.new('LocalScript', LeftColumn)
+
+	local leftColumn = script.Parent
+	local rightColumn = leftColumn.Parent:WaitForChild("RightColumn")
+	local titleLabel = rightColumn:WaitForChild("TitleFrame"):WaitForChild("TitleLabel")
+	local pagesContainer = rightColumn:WaitForChild("PagesContainer")
+	
+	local selectedButton = nil
+	
+	-- Map button name to page name and title
+	local pageMapping = {
+		["BloxFruits"] = {pageName = "BloxFruitsPage", title = "⚔️ Blox Fruits"},
+		["GrowAGarden"] = {pageName = "GrowAGardenPage", title = "🌱 Grow a Garden"}
+	}
+	
+	local function hideAllPages()
+		for _, page in pagesContainer:GetChildren() do
+			if page:IsA("Frame") then
+				page.Visible = false
+			end
+		end
+	end
+	
+	local function clearSelection()
+		if selectedButton then
+			local indicator = selectedButton:FindFirstChild("SelectionIndicator")
+			if indicator then
+				indicator:Destroy()
+			end
+		end
+	end
+	
+	local function setSelection(button)
+		clearSelection()
+		selectedButton = button
+		
+		-- Thêm sọc xanh dương ở cạnh bên trái
+		local indicator = Instance.new("Frame")
+		indicator.Name = "SelectionIndicator"
+		indicator.Size = UDim2.new(0, 4, 1, 0)
+		indicator.Position = UDim2.new(0, 0, 0, 0)
+		indicator.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+		indicator.BorderSizePixel = 0
+		indicator.Parent = button
+		
+		-- Thêm UICorner để bo tròn nhẹ
+		local corner = Instance.new("UICorner")
+		corner.CornerRadius = UDim.new(0, 2)
+		corner.Parent = indicator
+		
+		-- Cập nhật Title và hiển thị trang tương ứng
+		local mapping = pageMapping[button.Name]
+		if mapping then
+			titleLabel.Text = mapping.title
+			hideAllPages()
+			local page = pagesContainer:FindFirstChild(mapping.pageName)
+			if page then
+				page.Visible = true
+			end
+		end
+	end
+	
+	local function onButtonClicked(button)
+		setSelection(button)
+	end
+	
+	-- Thiết lập sự kiện click cho tất cả TextButton trong LeftColumn
+	for _, child in leftColumn:GetChildren() do
+		if child:IsA("TextButton") then
+			child.MouseButton1Click:Connect(function()
+				onButtonClicked(child)
+			end)
+		end
+	end
+	
+	-- Lắng nghe khi có TextButton mới được thêm vào
+	leftColumn.DescendantAdded:Connect(function(descendant)
+		if descendant:IsA("TextButton") then
+			descendant.MouseButton1Click:Connect(function()
+				onButtonClicked(descendant)
+			end)
+		end
+	end)
+end
+coroutine.wrap(DJXPPB_fake_script)()
+local function SUSE_fake_script() -- QuantumOnyxHub.ClickScript 
+	local script = Instance.new('LocalScript', QuantumOnyxHub)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"))()
+	end)
+end
+coroutine.wrap(SUSE_fake_script)()
+local function BLMYCJ_fake_script() -- BlueXHub.ClickScript 
+	local script = Instance.new('LocalScript', BlueXHub)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()    
+	end)
+end
+coroutine.wrap(BLMYCJ_fake_script)()
+local function VYVLUJ_fake_script() -- GravityHub.ClickScript 
+	local script = Instance.new('LocalScript', GravityHub)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))()
+	end)
+end
+coroutine.wrap(VYVLUJ_fake_script)()
+local function WRHDKNE_fake_script() -- nYaNn.ClickScript 
+	local script = Instance.new('LocalScript', nYaNn)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/86224472741926/Anhba/refs/heads/main/Fram%20nyann.txt"))()
+	end)
+end
+coroutine.wrap(WRHDKNE_fake_script)()
+local function ZCBEU_fake_script() -- TeddyHubHop.ClickScript 
+	local script = Instance.new('LocalScript', TeddyHubHop)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		repeat task.wait() until game:IsLoaded() and game:GetService("Players") and game.Players.LocalPlayer and game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TEDDYHUB-FREEMIUM"))()
+	end)
+end
+coroutine.wrap(ZCBEU_fake_script)()
+local function ZWZJ_fake_script() -- ToggleButton.LocalScript 
+	local script = Instance.new('LocalScript', ToggleButton)
+
+	local toggleButton = script.Parent
+	local mainFrame = toggleButton.Parent:WaitForChild("MainFrame")
+	
+	local isVisible = true
+	
+	toggleButton.MouseButton1Click:Connect(function()
+		isVisible = not isVisible
+		mainFrame.Visible = isVisible
+	
+		if isVisible then
+			toggleButton.Text = " "
+		else
+			toggleButton.Text = " "
+		end
+	end)
+end
+coroutine.wrap(ZWZJ_fake_script)()
